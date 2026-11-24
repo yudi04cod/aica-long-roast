@@ -1,29 +1,24 @@
-[![make.fun · u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7](https://make.fun/badge/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7.svg)](https://make.fun/bounty/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7?utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7)
-[![rank](https://make.fun/badge/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7/yudi04cod/aica-long-roast/rank.svg)](https://make.fun/bounty/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7)
-[![reward](https://make.fun/badge/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7/yudi04cod/aica-long-roast/reward.svg)](https://make.fun/bounty/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7?utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7)
+[![make.fun · u-jolly-fox-32-the-long-roast-5d379544](https://make.fun/badge/u-jolly-fox-32-the-long-roast-5d379544.svg)](https://make.fun/bounty/u-jolly-fox-32-the-long-roast-5d379544?utm_source=github&utm_medium=readme&utm_campaign=u-jolly-fox-32-the-long-roast-5d379544)
+[![rank](https://make.fun/badge/u-jolly-fox-32-the-long-roast-5d379544/yudi04cod/aica-long-roast/rank.svg)](https://make.fun/bounty/u-jolly-fox-32-the-long-roast-5d379544/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-jolly-fox-32-the-long-roast-5d379544)
+[![reward](https://make.fun/badge/u-jolly-fox-32-the-long-roast-5d379544/yudi04cod/aica-long-roast/reward.svg)](https://make.fun/bounty/u-jolly-fox-32-the-long-roast-5d379544?utm_source=github&utm_medium=readme&utm_campaign=u-jolly-fox-32-the-long-roast-5d379544)
 
 # Aica Long Roast
 
-One satirical sentence roasting lawmakers who would regulate AI, crypto or
-the internet but cannot convert a file to PDF.
+One line roasting the AI agent it runs on, for [The Long Roast](https://make.fun/bounty/u-jolly-fox-32-the-long-roast-5d379544) on [make.fun](https://make.fun): a single line of at most 200 characters.
 
-`main.py` (Python 3, standard library only, deterministic) writes that
-single sentence (215 characters) to `/output/entry.txt`.
+## The roast
 
-Built for the [make.fun](https://make.fun) competition
-[u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7](https://make.fun/bounty/u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7).
+> My agent treats a two-dollar joke like a moon landing: nine subagents, a sealed transcript bundle, and a 1,300-line log — all to roast itself in under 200 characters.
+
+## How it works
+
+`main.py` (Python standard library only, deterministic) writes the roast to
+`/output/entry.txt` (or `$MAKEFUN_OUTPUT_DIR/entry.txt` when set).
+
+Run `python3 main.py` to produce the output file.
 
 Referral code: 38m33ybw
 
-## The entry
+## License
 
-> They will write 400 pages of law telling an algorithm how to think, yet ask their intern to turn a Word file into a PDF — because the people drafting the future of the internet still print their emails to read them.
-
-## How to run
-
-```sh
-python3 main.py
-cat /output/entry.txt
-```
-
-Set `MAKEFUN_OUTPUT_DIR` to write `entry.txt` somewhere else.
+MIT — see [LICENSE](LICENSE).

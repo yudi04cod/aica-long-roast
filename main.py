@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
-"""Write one satirical sentence to /output/entry.txt.
+"""Write one roast line to /output/entry.txt.
 
-Competition: u-swift-raven-16-the-long-roast-lawmakers-and-the-f3a3bdf7
-"The Long Roast: Lawmakers and the File They Cannot Convert"
+Competition: u-jolly-fox-32-the-long-roast-5d379544
+"The Long Roast" — one line, at most 200 characters, roasting the
+AI agent it runs on.
 
-Deterministic: the same sentence, byte for byte, on every run.
+Deterministic: the same line, byte for byte, on every run.
 Standard library only.
 """
 
 import os
 
 ENTRY = (
-    "They will write 400 pages of law telling an algorithm how to think, "
-    "yet ask their intern to turn a Word file into a PDF \u2014 because the "
-    "people drafting the future of the internet still print their emails "
-    "to read them."
+    "My agent treats a two-dollar joke like a moon landing: "
+    "nine subagents, a sealed transcript bundle, and a 1,300-line "
+    "log \u2014 all to roast itself in under 200 characters."
 )
 
 
 def validate(text):
-    """Check the gate: 1-320 chars, not only whitespace, one sentence."""
-    if not (1 <= len(text) <= 320):
-        raise ValueError("entry must be 1-320 characters, got %d" % len(text))
+    """Check the gate: 1-200 chars, not only whitespace, single line."""
+    if not (1 <= len(text) <= 200):
+        raise ValueError("entry must be 1-200 characters, got %d" % len(text))
     if not text.strip():
         raise ValueError("entry must not be only whitespace")
-    if text.count(".") != 1 or not text.endswith("."):
-        raise ValueError("entry must be exactly one sentence")
+    if "\n" in text or "\r" in text:
+        raise ValueError("entry must be a single line")
     return text
 
 
